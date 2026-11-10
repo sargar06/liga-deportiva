@@ -1,0 +1,140 @@
+<main class="container mt-4 mb-5">
+  <div class="row">
+    <div class="col-12">
+      <h1 class="text-success fw-bold text-uppercase border-bottom border-success border-3 pb-2">Clasificaciones</h1>
+      <p class="text-muted mb-4">Puntos de cada equipo (PJ = partidos jugados, Pts = puntos).</p>
+    </div>
+  </div>
+
+  <!-- FILTRO (solo visual: no funciona, no tiene JS) -->
+  <form class="bg-light border rounded p-3 mb-4">
+    <div class="row align-items-end">
+      <div class="col-12 col-md-4 mb-3">
+        <label for="filtroDeporte" class="form-label">Deporte</label>
+        <select class="form-select" id="filtroDeporte">
+          <option>Todos</option>
+          <option>Fútbol sala</option>
+          <option>Baloncesto</option>
+          <option>Balonmano</option>
+          <option>Voleibol</option>
+        </select>
+      </div>
+
+      <div class="col-12 col-md-4 mb-3">
+        <label for="filtroOrden" class="form-label">Ordenar por</label>
+        <select class="form-select" id="filtroOrden">
+          <option>Puntos</option>
+          <option>Partidos jugados</option>
+          <option>Nombre del equipo</option>
+        </select>
+      </div>
+
+      <div class="col-12 col-md-4 mb-3 d-flex gap-2">
+        <button type="button" class="btn btn-success boton-card shadow">Filtrar</button>
+        <button type="button" class="btn btn-outline-secondary boton-card shadow">Limpiar</button>
+      </div>
+    </div>
+  </form>
+
+  <div class="row">
+    <div class="col-12 col-lg-6 mb-4">
+      <div class="card shadow-sm">
+        <div class="card-header bg-success text-white fw-bold text-uppercase">Fútbol sala</div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item fw-bold">
+            <div class="row">
+              <div class="col-6">Equipo</div>
+              <div class="col-3 text-center">PJ</div>
+              <div class="col-3 text-end">Pts</div>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="row">
+              <div class="col-6 fw-bold text-success">1. 2º Bach</div>
+              <div class="col-3 text-center">4</div>
+              <div class="col-3 text-end fw-bold">12</div>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="row">
+              <div class="col-6">2. 1º ESO A</div>
+              <div class="col-3 text-center">4</div>
+              <div class="col-3 text-end fw-bold">9</div>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="row">
+              <div class="col-6">3. 3º ESO</div>
+              <div class="col-3 text-center">4</div>
+              <div class="col-3 text-end fw-bold">6</div>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="row">
+              <div class="col-6">4. 4º ESO</div>
+              <div class="col-3 text-center">4</div>
+              <div class="col-3 text-end fw-bold">4</div>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="row">
+              <div class="col-6">5. 2º ESO B</div>
+              <div class="col-3 text-center">4</div>
+              <div class="col-3 text-end fw-bold">1</div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="col-12 col-lg-6 mb-4">
+      <div class="card shadow-sm">
+        <div class="card-header bg-success text-white fw-bold text-uppercase">Baloncesto</div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item fw-bold">
+            <div class="row">
+              <div class="col-6">Equipo</div>
+              <div class="col-3 text-center">PJ</div>
+              <div class="col-3 text-end">Pts</div>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="row">
+              <div class="col-6 fw-bold text-success">1. 2º Bach</div>
+              <div class="col-3 text-center">3</div>
+              <div class="col-3 text-end fw-bold">6</div>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="row">
+              <div class="col-6">2. 1º ESO B</div>
+              <div class="col-3 text-center">3</div>
+              <div class="col-3 text-end fw-bold">5</div>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="row">
+              <div class="col-6">3. 2º ESO A</div>
+              <div class="col-3 text-center">3</div>
+              <div class="col-3 text-end fw-bold">5</div>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="row">
+              <div class="col-6">4. 4º ESO</div>
+              <div class="col-3 text-center">3</div>
+              <div class="col-3 text-end fw-bold">4</div>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="row">
+              <div class="col-6">5. 3º ESO</div>
+              <div class="col-3 text-center">3</div>
+              <div class="col-3 text-end fw-bold">3</div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</main>

@@ -1,0 +1,301 @@
+<main class="container mt-4 mb-5">
+  <div class="row">
+    <div class="col-12">
+      <h1 class="text-success fw-bold text-uppercase border-bottom border-success border-3 pb-2">Equipos</h1>
+      <p class="text-muted mb-4">Equipos participantes en la liga 2026/2027.</p>
+    </div>
+  </div>
+
+  <!-- FILTRO (solo visual: no funciona, no tiene JS) -->
+  <form class="bg-light border rounded p-3 mb-4">
+    <div class="row align-items-end">
+      <div class="col-12 col-md-4 mb-3">
+        <label for="filtroDeporte" class="form-label">Deporte</label>
+        <select class="form-select" id="filtroDeporte">
+          <option>Todos</option>
+          <option>Fútbol sala</option>
+          <option>Baloncesto</option>
+          <option>Balonmano</option>
+          <option>Voleibol</option>
+        </select>
+      </div>
+
+      <div class="col-12 col-md-4 mb-3">
+        <label for="filtroCurso" class="form-label">Curso</label>
+        <select class="form-select" id="filtroCurso">
+          <option>Todos</option>
+          <option>1º ESO</option>
+          <option>2º ESO</option>
+          <option>3º ESO</option>
+          <option>4º ESO</option>
+          <option>Bachillerato</option>
+        </select>
+      </div>
+
+      <div class="col-12 col-md-4 mb-3 d-flex gap-2">
+        <button type="button" class="btn btn-success boton-card shadow">Filtrar</button>
+        <button type="button" class="btn btn-outline-secondary boton-card shadow">Limpiar</button>
+      </div>
+    </div>
+  </form>
+
+  <div class="row">
+    <div class="col-6 col-md-3 mb-4">
+      <div class="bg-primary text-white text-center p-3 rounded border shadow-sm">
+        <h4 class="fw-bold">1º ESO A</h4>
+        <p class="mb-0">Fútbol sala</p>
+        <button type="button" class="btn btn-light btn-sm mt-3 boton-card shadow-sm" data-bs-toggle="modal" data-bs-target="#modalEquipo1">Ver plantilla</button>
+      </div>
+    </div>
+
+    <div class="col-6 col-md-3 mb-4">
+      <div class="bg-success text-white text-center p-3 rounded border shadow-sm">
+        <h4 class="fw-bold">1º ESO B</h4>
+        <p class="mb-0">Baloncesto</p>
+        <button type="button" class="btn btn-light btn-sm mt-3 boton-card shadow-sm" data-bs-toggle="modal" data-bs-target="#modalEquipo2">Ver plantilla</button>
+      </div>
+    </div>
+
+    <div class="col-6 col-md-3 mb-4">
+      <div class="bg-danger text-white text-center p-3 rounded border shadow-sm">
+        <h4 class="fw-bold">2º ESO A</h4>
+        <p class="mb-0">Balonmano</p>
+        <button type="button" class="btn btn-light btn-sm mt-3 boton-card shadow-sm" data-bs-toggle="modal" data-bs-target="#modalEquipo3">Ver plantilla</button>
+      </div>
+    </div>
+
+    <div class="col-6 col-md-3 mb-4">
+      <div class="bg-warning text-dark text-center p-3 rounded border shadow-sm">
+        <h4 class="fw-bold">2º ESO B</h4>
+        <p class="mb-0">Voleibol</p>
+        <button type="button" class="btn btn-dark btn-sm mt-3 boton-card shadow-sm" data-bs-toggle="modal" data-bs-target="#modalEquipo4">Ver plantilla</button>
+      </div>
+    </div>
+
+    <div class="col-6 col-md-3 mb-4">
+      <div class="bg-dark text-light text-center p-3 rounded border shadow-sm">
+        <h4 class="fw-bold">3º ESO</h4>
+        <p class="mb-0">Fútbol sala</p>
+        <button type="button" class="btn btn-light btn-sm mt-3 boton-card shadow-sm" data-bs-toggle="modal" data-bs-target="#modalEquipo5">Ver plantilla</button>
+      </div>
+    </div>
+
+    <div class="col-6 col-md-3 mb-4">
+      <div class="bg-secondary text-white text-center p-3 rounded border shadow-sm">
+        <h4 class="fw-bold">4º ESO</h4>
+        <p class="mb-0">Baloncesto</p>
+        <button type="button" class="btn btn-light btn-sm mt-3 boton-card shadow-sm" data-bs-toggle="modal" data-bs-target="#modalEquipo6">Ver plantilla</button>
+      </div>
+    </div>
+
+    <div class="col-6 col-md-3 mb-4">
+      <div class="bg-info text-dark text-center p-3 rounded border shadow-sm">
+        <h4 class="fw-bold">1º Bach</h4>
+        <p class="mb-0">Voleibol</p>
+        <button type="button" class="btn btn-dark btn-sm mt-3 boton-card shadow-sm" data-bs-toggle="modal" data-bs-target="#modalEquipo7">Ver plantilla</button>
+      </div>
+    </div>
+
+    <div class="col-6 col-md-3 mb-4">
+      <div class="bg-light text-dark text-center p-3 rounded border shadow-sm">
+        <h4 class="fw-bold">2º Bach</h4>
+        <p class="mb-0">Fútbol sala</p>
+        <button type="button" class="btn btn-dark btn-sm mt-3 boton-card shadow-sm" data-bs-toggle="modal" data-bs-target="#modalEquipo8">Ver plantilla</button>
+      </div>
+    </div>
+  </div>
+</main>
+
+<!-- MODALES: plantilla de cada equipo (modal fade) -->
+
+<div class="modal fade" id="modalEquipo1" tabindex="-1" aria-labelledby="tituloEquipo1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="tituloEquipo1">Plantilla de 1º ESO A</h5>
+        <button type="button" class="btn-close boton-card" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p class="text-muted fst-italic">Fútbol sala</p>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item d-flex justify-content-between"><span>Hugo Navarro</span><span class="text-muted">Portero</span></li>
+          <li class="list-group-item d-flex justify-content-between"><span>Daniel Ortega</span><span class="text-muted">Cierre</span></li>
+          <li class="list-group-item d-flex justify-content-between"><span>Carla Jiménez</span><span class="text-muted">Ala</span></li>
+          <li class="list-group-item d-flex justify-content-between"><span>Iván Castillo</span><span class="text-muted">Ala</span></li>
+          <li class="list-group-item d-flex justify-content-between"><span>Noa Romero</span><span class="text-muted">Pívot</span></li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary boton-card shadow" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalEquipo2" tabindex="-1" aria-labelledby="tituloEquipo2" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="tituloEquipo2">Plantilla de 1º ESO B</h5>
+        <button type="button" class="btn-close boton-card" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p class="text-muted fst-italic">Baloncesto</p>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item d-flex justify-content-between"><span>Sara Delgado</span><span class="text-muted">Base</span></li>
+          <li class="list-group-item d-flex justify-content-between"><span>Adrián Vega</span><span class="text-muted">Escolta</span></li>
+          <li class="list-group-item d-flex justify-content-between"><span>Paula Herrera</span><span class="text-muted">Alero</span></li>
+          <li class="list-group-item d-flex justify-content-between"><span>Mario Cano</span><span class="text-muted">Ala-pívot</span></li>
+          <li class="list-group-item d-flex justify-content-between"><span>Laura Prieto</span><span class="text-muted">Pívot</span></li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary boton-card shadow" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalEquipo3" tabindex="-1" aria-labelledby="tituloEquipo3" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="tituloEquipo3">Plantilla de 2º ESO A</h5>
+        <button type="button" class="btn-close boton-card" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p class="text-muted fst-italic">Balonmano</p>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item d-flex justify-content-between"><span>Álvaro Gómez</span><span class="text-muted">Portero</span></li>
+          <li class="list-group-item d-flex justify-content-between"><span>Irene Campos</span><span class="text-muted">Extremo</span></li>
+          <li class="list-group-item d-flex justify-content-between"><span>Rubén Soto</span><span class="text-muted">Lateral</span></li>
+          <li class="list-group-item d-flex justify-content-between"><span>Claudia Marín</span><span class="text-muted">Central</span></li>
+          <li class="list-group-item d-flex justify-content-between"><span>Jorge Iglesias</span><span class="text-muted">Pivote</span></li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary boton-card shadow" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalEquipo4" tabindex="-1" aria-labelledby="tituloEquipo4" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="tituloEquipo4">Plantilla de 2º ESO B</h5>
+        <button type="button" class="btn-close boton-card" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p class="text-muted fst-italic">Voleibol</p>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item d-flex justify-content-between"><span>Nerea Ibáñez</span><span class="text-muted">Colocadora</span></li>
+          <li class="list-group-item d-flex justify-content-between"><span>Diego Cruz</span><span class="text-muted">Receptor</span></li>
+          <li class="list-group-item d-flex justify-content-between"><span>Alba Santos</span><span class="text-muted">Opuesta</span></li>
+          <li class="list-group-item d-flex justify-content-between"><span>Raúl Medina</span><span class="text-muted">Central</span></li>
+          <li class="list-group-item d-flex justify-content-between"><span>Ana Pascual</span><span class="text-muted">Líbero</span></li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary boton-card shadow" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalEquipo5" tabindex="-1" aria-labelledby="tituloEquipo5" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="tituloEquipo5">Plantilla de 3º ESO</h5>
+        <button type="button" class="btn-close boton-card" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p class="text-muted fst-italic">Fútbol sala</p>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item d-flex justify-content-between"><span>Marcos Peña</span><span class="text-muted">Portero</span></li>
+          <li class="list-group-item d-flex justify-content-between"><span>Aitana León</span><span class="text-muted">Cierre</span></li>
+          <li class="list-group-item d-flex justify-content-between"><span>Samuel Ortiz</span><span class="text-muted">Ala</span></li>
+          <li class="list-group-item d-flex justify-content-between"><span>Emma Rubio</span><span class="text-muted">Ala</span></li>
+          <li class="list-group-item d-flex justify-content-between"><span>Víctor Gil</span><span class="text-muted">Pívot</span></li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary boton-card shadow" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalEquipo6" tabindex="-1" aria-labelledby="tituloEquipo6" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="tituloEquipo6">Plantilla de 4º ESO</h5>
+        <button type="button" class="btn-close boton-card" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p class="text-muted fst-italic">Baloncesto</p>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item d-flex justify-content-between"><span>Julia Moreno</span><span class="text-muted">Base</span></li>
+          <li class="list-group-item d-flex justify-content-between"><span>Óscar Blanco</span><span class="text-muted">Escolta</span></li>
+          <li class="list-group-item d-flex justify-content-between"><span>Cristina Pons</span><span class="text-muted">Alero</span></li>
+          <li class="list-group-item d-flex justify-content-between"><span>Tomás Ferrer</span><span class="text-muted">Ala-pívot</span></li>
+          <li class="list-group-item d-flex justify-content-between"><span>Pablo Sánchez</span><span class="text-muted">Pívot</span></li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary boton-card shadow" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalEquipo7" tabindex="-1" aria-labelledby="tituloEquipo7" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="tituloEquipo7">Plantilla de 1º Bach</h5>
+        <button type="button" class="btn-close boton-card" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p class="text-muted fst-italic">Voleibol</p>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item d-flex justify-content-between"><span>Marta Ruiz</span><span class="text-muted">Colocadora</span></li>
+          <li class="list-group-item d-flex justify-content-between"><span>Enzo Lara</span><span class="text-muted">Receptor</span></li>
+          <li class="list-group-item d-flex justify-content-between"><span>Lidia Montero</span><span class="text-muted">Opuesta</span></li>
+          <li class="list-group-item d-flex justify-content-between"><span>Gonzalo Vidal</span><span class="text-muted">Central</span></li>
+          <li class="list-group-item d-flex justify-content-between"><span>Sofía Esteban</span><span class="text-muted">Líbero</span></li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary boton-card shadow" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalEquipo8" tabindex="-1" aria-labelledby="tituloEquipo8" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="tituloEquipo8">Plantilla de 2º Bach</h5>
+        <button type="button" class="btn-close boton-card" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p class="text-muted fst-italic">Fútbol sala</p>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item d-flex justify-content-between"><span>Rodrigo Aguilar</span><span class="text-muted">Portero</span></li>
+          <li class="list-group-item d-flex justify-content-between"><span>Beatriz Núñez</span><span class="text-muted">Cierre</span></li>
+          <li class="list-group-item d-flex justify-content-between"><span>Eduardo Salas</span><span class="text-muted">Ala</span></li>
+          <li class="list-group-item d-flex justify-content-between"><span>Marina Cabrera</span><span class="text-muted">Ala</span></li>
+          <li class="list-group-item d-flex justify-content-between"><span>Lucía Martín</span><span class="text-muted">Delantera</span></li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary boton-card shadow" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>

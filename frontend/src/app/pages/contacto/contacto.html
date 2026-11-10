@@ -1,0 +1,126 @@
+<!-- TOAST DE CONFIRMACIÓN (se muestra con JS al enviar la inscripción) -->
+<div class="toast-container position-absolute p-5" style="right: 0; top: 56px;">
+  <div class="toast bg-info" role="alert" id="toastConfirmacion">
+    <div class="toast-header">
+      <strong class="me-auto">Inscripción enviada</strong>
+      <small>Ahora</small>
+      <button type="button" class="btn-close boton-card" data-bs-dismiss="toast"></button>
+    </div>
+    <div class="toast-body">
+      <p class="mb-0">¡Gracias! Hemos recibido tu inscripción.</p>
+    </div>
+  </div>
+</div>
+
+<main class="container mt-4 mb-5">
+  <div class="row">
+    <div class="col-12">
+      <h1 class="text-success fw-bold text-uppercase border-bottom border-success border-3 pb-2">Contacto e inscripción</h1>
+      <p class="text-muted mb-4">Consulta el calendario y apunta a tu equipo.</p>
+    </div>
+  </div>
+
+  <div class="row">
+
+    <!-- CALENDARIO ESTÁTICO -->
+    <div class="col-12 col-lg-6 mb-4">
+      <h2 class="fs-3 text-success fw-bold mb-3">Calendario</h2>
+
+      <div class="card mb-3">
+        <div class="card-header fw-bold">Lunes 26 de octubre</div>
+        <div class="card-body">
+          <p class="card-text mb-0">Fútbol sala: 1º ESO A - 3º ESO, 11:15 h.</p>
+        </div>
+      </div>
+
+      <div class="card mb-3">
+        <div class="card-header fw-bold">Miércoles 28 de octubre</div>
+        <div class="card-body">
+          <p class="card-text mb-0">Baloncesto: 2º Bach - 1º ESO B, 11:15 h.</p>
+        </div>
+      </div>
+
+      <div class="card mb-3">
+        <div class="card-header fw-bold">Viernes 30 de octubre</div>
+        <div class="card-body">
+          <p class="card-text mb-0">Voleibol: 2º ESO B - 4º ESO, 11:15 h.</p>
+        </div>
+      </div>
+
+      <div class="card mb-3">
+        <div class="card-header fw-bold">Lunes 2 de noviembre</div>
+        <div class="card-body">
+          <p class="card-text mb-0">Balonmano: 2º ESO A - 1º Bach, 11:15 h.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- INSCRIPCIÓN: el botón abre un modal con el formulario -->
+    <div class="col-12 col-lg-6 mb-4">
+      <h2 class="fs-3 text-success fw-bold mb-3">Inscripción</h2>
+
+      <div class="card shadow-sm mb-4">
+        <div class="card-body text-center py-4">
+          <h4 class="card-title">¿Quieres participar?</h4>
+          <p class="card-text">Inscribe a tu equipo en la liga. Te confirmaremos la plaza por correo.</p>
+          <button type="button" class="btn btn-success btn-lg boton-card shadow" data-bs-toggle="modal" data-bs-target="#modalInscripcion">Inscribir mi equipo</button>
+        </div>
+      </div>
+
+      <h2 class="fs-3 text-success fw-bold mb-3">Datos de contacto</h2>
+      <ul class="list-group shadow-sm">
+        <li class="list-group-item"><strong>Correo:</strong> liga&#64;instituto.es</li>
+        <li class="list-group-item"><strong>Lugar:</strong> Conserjería del instituto</li>
+        <li class="list-group-item"><strong>Horario:</strong> Recreos, 11:15 h</li>
+      </ul>
+    </div>
+
+  </div>
+</main>
+
+<!-- MODAL DE INSCRIPCIÓN (modal fade) -->
+<div class="modal fade" id="modalInscripcion" tabindex="-1" aria-labelledby="tituloInscripcion" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="tituloInscripcion">Inscripción de equipo</h5>
+        <button type="button" class="btn-close boton-card" data-bs-dismiss="modal"></button>
+      </div>
+
+      <form id="formInscripcion" (submit)="$event.preventDefault()">
+        <div class="modal-body">
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="nombre" placeholder="Nombre del equipo" required>
+            <label for="nombre">Nombre del equipo</label>
+          </div>
+
+          <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="correo" placeholder="Correo electrónico" required>
+            <label for="correo">Correo electrónico</label>
+          </div>
+
+          <div class="mb-3">
+            <label for="deporte" class="form-label">Deporte</label>
+            <select class="form-select" id="deporte">
+              <option value="fs">Fútbol sala</option>
+              <option value="bl">Baloncesto</option>
+              <option value="te">Tenis</option>
+              <option value="bm">Balonmano</option>
+              <option value="vo">Voleibol</option>
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <label for="comentario" class="form-label">Comentario</label>
+            <textarea name="comentario" id="comentario" class="form-control" rows="3"></textarea>
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary boton-card shadow" data-bs-dismiss="modal">Cancelar</button>
+          <button type="submit" class="btn btn-success boton-card shadow">Enviar inscripción</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

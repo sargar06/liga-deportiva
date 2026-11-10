@@ -1,0 +1,160 @@
+<main class="container mt-4 mb-5">
+  <div class="row">
+    <div class="col-12">
+      <h1 class="text-success fw-bold text-uppercase border-bottom border-success border-3 pb-2">Jugadores destacados</h1>
+      <p class="text-muted mb-4">Los mejores de cada competición en lo que va de liga.</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12 col-md-6 col-lg-3 mb-4">
+      <div class="card shadow-sm">
+        <div class="card-body text-center">
+          <img src="img/jugadoraFutbolSala.jpg" class="rounded-circle border border-success border-3 mb-3" width="120" height="120" alt="Foto de Lucía Martín">
+          <h4 class="card-title">Lucía Martín</h4>
+          <h5 class="card-subtitle mb-2 text-muted">Delantera · Fútbol sala</h5>
+          <p class="card-text fw-bold text-success">12 goles</p>
+          <button type="button" class="btn btn-outline-success btn-sm boton-card shadow-sm" data-bs-toggle="modal" data-bs-target="#modalJugador1">Ver ficha</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-3 mb-4">
+      <div class="card shadow-sm">
+        <div class="card-body text-center">
+          <img src="img/jugadorBaloncesto.jpg" class="rounded-circle border border-success border-3 mb-3" width="120" height="120" alt="Foto de Pablo Sánchez">
+          <h4 class="card-title">Pablo Sánchez</h4>
+          <h5 class="card-subtitle mb-2 text-muted">Pívot · Baloncesto</h5>
+          <p class="card-text fw-bold text-success">15 puntos por partido</p>
+          <button type="button" class="btn btn-outline-success boton-card btn-sm shadow-sm" data-bs-toggle="modal" data-bs-target="#modalJugador2">Ver ficha</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-3 mb-4">
+      <div class="card shadow-sm">
+        <div class="card-body text-center">
+          <img src="img/jugadoraBolei.jpg" class="rounded-circle border border-success border-3 mb-3" width="120" height="120" alt="Foto de Marta Ruiz">
+          <h4 class="card-title">Marta Ruiz</h4>
+          <h5 class="card-subtitle mb-2 text-muted">Colocadora · Voleibol</h5>
+          <p class="card-text fw-bold text-success">28 asistencias</p>
+          <button type="button" class="btn btn-outline-success boton-card btn-sm shadow-sm" data-bs-toggle="modal" data-bs-target="#modalJugador3">Ver ficha</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-3 mb-4">
+      <div class="card shadow-sm">
+        <div class="card-body text-center">
+          <img src="img/jugadorBalonmano.jpg" class="rounded-circle border border-success border-3 mb-3" width="120" height="120" alt="Foto de Álvaro Gómez">
+          <h4 class="card-title">Álvaro Gómez</h4>
+          <h5 class="card-subtitle mb-2 text-muted">Portero · Balonmano</h5>
+          <p class="card-text fw-bold text-success">62 % de paradas</p>
+          <button type="button" class="btn btn-outline-success boton-card btn-sm shadow-sm" data-bs-toggle="modal" data-bs-target="#modalJugador4">Ver ficha</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<!-- MODALES: ficha de cada jugador (modal fade) -->
+
+<div class="modal fade" id="modalJugador1" tabindex="-1" aria-labelledby="tituloJugador1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="tituloJugador1">Ficha del jugador</h5>
+        <button type="button" class="btn-close boton-card" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body text-center">
+        <img src="img/jugadoraFutbolSala.jpg" class="rounded-circle border border-success border-3 mb-3" width="160" height="160" alt="Foto de Lucía Martín">
+        <h4>Lucía Martín</h4>
+        <p class="text-muted fst-italic">Delantera · Fútbol sala</p>
+        <ul class="list-group list-group-flush text-start">
+          <li class="list-group-item d-flex justify-content-between"><span>Equipo</span><strong>2º Bach</strong></li>
+          <li class="list-group-item d-flex justify-content-between"><span>Dorsal</span><strong>9</strong></li>
+          <li class="list-group-item d-flex justify-content-between"><span>Partidos jugados</span><strong>4</strong></li>
+          <li class="list-group-item d-flex justify-content-between"><span>Destacado</span><strong class="text-success">12 goles</strong></li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary boton-card shadow" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalJugador2" tabindex="-1" aria-labelledby="tituloJugador2" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="tituloJugador2">Ficha del jugador</h5>
+        <button type="button" class="btn-close boton-card" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body text-center">
+        <img src="img/jugadorBaloncesto.jpg" class="rounded-circle border border-success border-3 mb-3" width="160" height="160" alt="Foto de Pablo Sánchez">
+        <h4>Pablo Sánchez</h4>
+        <p class="text-muted fst-italic">Pívot · Baloncesto</p>
+        <ul class="list-group list-group-flush text-start">
+          <li class="list-group-item d-flex justify-content-between"><span>Equipo</span><strong>4º ESO</strong></li>
+          <li class="list-group-item d-flex justify-content-between"><span>Dorsal</span><strong>12</strong></li>
+          <li class="list-group-item d-flex justify-content-between"><span>Partidos jugados</span><strong>3</strong></li>
+          <li class="list-group-item d-flex justify-content-between"><span>Destacado</span><strong class="text-success">15 puntos por partido</strong></li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary shadow boton-card" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalJugador3" tabindex="-1" aria-labelledby="tituloJugador3" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="tituloJugador3">Ficha del jugador</h5>
+        <button type="button" class="btn-close boton-card" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body text-center">
+        <img src="img/jugadoraBolei.jpg" class="rounded-circle border border-success border-3 mb-3" width="160" height="160" alt="Foto de Marta Ruiz">
+        <h4>Marta Ruiz</h4>
+        <p class="text-muted fst-italic">Colocadora · Voleibol</p>
+        <ul class="list-group list-group-flush text-start">
+          <li class="list-group-item d-flex justify-content-between"><span>Equipo</span><strong>1º Bach</strong></li>
+          <li class="list-group-item d-flex justify-content-between"><span>Dorsal</span><strong>7</strong></li>
+          <li class="list-group-item d-flex justify-content-between"><span>Partidos jugados</span><strong>3</strong></li>
+          <li class="list-group-item d-flex justify-content-between"><span>Destacado</span><strong class="text-success">28 asistencias</strong></li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary shadow boton-card" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalJugador4" tabindex="-1" aria-labelledby="tituloJugador4" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="tituloJugador4">Ficha del jugador</h5>
+        <button type="button" class="btn-close boton-card" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body text-center">
+        <img src="img/jugadorBalonmano.jpg" class="rounded-circle border border-success border-3 mb-3" width="160" height="160" alt="Foto de Álvaro Gómez">
+        <h4>Álvaro Gómez</h4>
+        <p class="text-muted fst-italic">Portero · Balonmano</p>
+        <ul class="list-group list-group-flush text-start">
+          <li class="list-group-item d-flex justify-content-between"><span>Equipo</span><strong>2º ESO A</strong></li>
+          <li class="list-group-item d-flex justify-content-between"><span>Dorsal</span><strong>1</strong></li>
+          <li class="list-group-item d-flex justify-content-between"><span>Partidos jugados</span><strong>4</strong></li>
+          <li class="list-group-item d-flex justify-content-between"><span>Destacado</span><strong class="text-success">62 % de paradas</strong></li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary shadow boton-card" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>

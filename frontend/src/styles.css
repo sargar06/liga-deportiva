@@ -1,2 +1,10 @@
-/* You can add global styles to this file, and also import other style files */
 @import "bootstrap/dist/css/bootstrap.min.css";
+
+/* Estilos que estaban repetidos en el <style> de cada página HTML */
+body {
+  padding-top: 56px;
+}
+
+.boton-card:hover {
+  transform: scale(1.25);
+}
